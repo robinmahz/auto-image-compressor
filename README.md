@@ -1,16 +1,17 @@
-# Image Compression Tool
+# Auto Image Compressor
 
-This tool automatically compresses images when they are added to the `images` folder. It's perfect for quickly reducing image file sizes while maintaining good quality.
+A Python-based tool that automatically compresses images when added to a watched folder. Perfect for content creators, web developers, or anyone who regularly works with images!
 
-## Features
+## ✨ Features
 
-- 🖼️ Automatically detects new images in the `images` folder
-- 📦 Compresses images to a target size (default: 600KB)
-- 🔄 Converts images to JPG format
-- 🚀 Easy access through desktop shortcuts
-- ⚡ Supports PNG, JPG, JPEG, GIF, and BMP formats
+- 🖼️ **Automatic Detection**: Instantly detects new images in the watched folder
+- 📦 **Smart Compression**: Optimizes images to target size while maintaining quality
+- 🔄 **Format Conversion**: Automatically converts images to JPG format
+- 🚀 **Easy Access**: Creates desktop shortcuts for quick access (Windows, macOS, Linux)
+- ⚡ **Multi-format Support**: Works with PNG, JPG, JPEG, GIF, and BMP formats
+- 💻 **Cross-platform**: Works on Windows, macOS, and Linux
 
-## Setup Instructions
+## 🚀 Quick Start
 
 1. **Install Required Packages**
 
@@ -28,41 +29,60 @@ This tool automatically compresses images when they are added to the `images` fo
    python compress.py
    ```
 
-## How to Use
+   The script will:
+
+   - Create necessary folders
+   - Set up desktop shortcuts
+   - Start watching for new images
+
+## 📁 How to Use
 
 1. **Adding Images**
 
-   - Place your images in the `images` folder
-   - You can use the desktop shortcut for easy access
+   - Simply drop your images into the `images` folder
+   - Use the desktop shortcut for quick access
    - Supported formats: PNG, JPG, JPEG, GIF, BMP
 
 2. **Getting Compressed Images**
 
-   - Compressed images will automatically appear in the `compressed_images` folder
-   - Use the desktop shortcut to quickly access compressed images
+   - Compressed images appear automatically in the `compressed_images` folder
+   - Access them through the desktop shortcut
    - All compressed images are saved as JPG format
 
 3. **Stopping the Script**
    - Press `Ctrl + C` in the terminal
    - Or close the terminal window
 
-## Folder Structure
+## 🛠️ Technical Details
 
-- `images/` - Place your original images here
-- `compressed_images/` - Find your compressed images here
-- Desktop shortcuts are available for both folders
+- **Default Compression**: Targets 600KB file size
+- **Quality Adjustment**: Automatically adjusts quality to meet target size
+- **Transparency Handling**: Converts transparent images to RGB
+- **Shortcut Management**: Automatically creates and updates desktop shortcuts
 
-## Notes
+## 📂 Project Structure
 
-- The script will continue running until you stop it
-- Each new image will be automatically compressed
-- Original images remain unchanged
-- Compressed images are saved with the same name but in JPG format
+```
+auto-image-compressor/
+├── images/              # Drop your images here
+├── compressed_images/   # Find compressed images here
+├── compress.py          # Main script
+├── requirements.txt     # Dependencies
+└── README.md           # This file
+```
 
-## Requirements
+## ⚙️ Requirements
 
 - Python 3.x
-- Pillow
-- watchdog
+- Pillow (for image processing)
+- watchdog (for folder monitoring)
 
 All required packages are listed in `requirements.txt`
+
+## 🤝 Contributing
+
+Feel free to submit issues and enhancement requests!
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
